@@ -1,9 +1,13 @@
 package ru.netology
 
 fun main() {
-    val likes = 230
+    val likes = 235
+
+    println(spelling(likes))
+
+}
+fun spelling(likes: Int): String{
     val likesToString = likes.toString()
     val spelling = if (likesToString.last() == '1') "человеку" else "людям"
-    println("Понравилось $likes $spelling")
-
+    return "Понравилось $likes $spelling"
 }
