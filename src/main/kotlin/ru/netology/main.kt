@@ -2,8 +2,8 @@ package ru.netology
 
 fun main() {
     val likes = 235
-
-    println(spell(likes))
+    val result = spell(likes)
+    println(result)
 
 }
 fun spell(likes: Int): String{
