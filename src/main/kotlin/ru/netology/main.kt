@@ -7,6 +7,6 @@ fun main() {
 
 }
 fun spell(likes: Int): String{
-    val spelling = if (likes % 100 != 11) "человеку" else "людям"
+    val spelling = if (likes % 10 == 1 && likes % 100 != 11) "человеку" else "людям"
     return "Понравилось $likes $spelling"
 }
